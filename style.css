@@ -1,0 +1,181 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    padding: 15px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo h2 {
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.cta .btn {
+    background-color: #ff4500;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.hero {
+    height: 80vh;
+    background: url('image-cache.jpeg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.features {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.features h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.feature-item {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile-first design */
+/* Small Devices (Mobile) */
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .feature-grid {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .feature-item {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+/* Medium Devices (Tablets) */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .feature-grid {
+        flex-direction: column;
+    }
+
+    .feature-item {
+        width: 80%;
+        margin: 10px auto;
+    }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1024px) {
+    nav {
+        justify-content: space-between;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .feature-grid {
+        flex-direction: row;
+    }
+
+    .feature-item {
+        width: 30%;
+    }
+}
